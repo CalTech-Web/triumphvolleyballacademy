@@ -169,6 +169,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Stats Strip */}
+      <section className="py-16" style={{ backgroundColor: "#3DBFB0" }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+            {[
+              { value: "3", label: "Competitive Programs" },
+              { value: "Est. 2021", label: "Serving Central Valley" },
+              { value: "Boys + Girls", label: "Indoor and Sand" },
+              { value: "501(c)(3)", label: "Non-Profit Organization" },
+            ].map((stat) => (
+              <div key={stat.label}>
+                <div className="text-4xl md:text-5xl font-black text-white mb-2">{stat.value}</div>
+                <div className="text-sm font-semibold uppercase tracking-wider" style={{ color: "rgba(255,255,255,0.85)" }}>{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Faith Section */}
       <section className="py-20 relative overflow-hidden" style={{ backgroundColor: "#F8F9FA" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
