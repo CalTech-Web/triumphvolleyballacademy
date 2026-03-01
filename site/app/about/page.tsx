@@ -6,6 +6,24 @@ export default function AboutPage() {
     <div>
       {/* Page Hero */}
       <section className="py-20 relative overflow-hidden" style={{ backgroundColor: "#1E2D5C" }}>
+        {/* Background team photo */}
+        <Image
+          src="/photos/boys-team.png"
+          alt="TVA team"
+          fill
+          unoptimized
+          className="object-cover object-center"
+          style={{ opacity: 0.18 }}
+        />
+        {/* Dark gradient overlay */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(30,45,92,0.85) 0%, rgba(30,45,92,0.75) 50%, rgba(30,45,92,0.9) 100%)",
+          }}
+        />
+        {/* Teal accent */}
         <div
           className="absolute inset-0 opacity-10"
           style={{
