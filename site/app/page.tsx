@@ -12,8 +12,8 @@ export default function Home() {
       >
         {/* Background action photo */}
         <Image
-          src="/photos/TVA-boys-action.png"
-          alt="TVA athletes in action"
+          src="/photos/tva-sand-courts-action.jpg"
+          alt="TVA athletes at the sand courts"
           fill
           unoptimized
           priority
