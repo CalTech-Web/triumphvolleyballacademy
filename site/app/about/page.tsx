@@ -141,7 +141,11 @@ export default function AboutPage() {
                   "We push athletes to compete at their highest level. Excellence is not just about winning - it is about giving your best in everything you do, for the glory of God.",
               },
             ].map((value) => (
-              <div key={value.title} className="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-shadow">
+              <div
+                key={value.title}
+                className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                style={{ borderTop: `4px solid ${value.color}` }}
+              >
                 <div
                   className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
                   style={{ backgroundColor: value.color }}
