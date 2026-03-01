@@ -5,6 +5,21 @@ export default function Footer() {
   return (
     <footer className="text-white" style={{ backgroundColor: "#1E2D5C" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Faith tagline */}
+        <div
+          className="text-center pb-10 mb-10"
+          style={{ borderBottom: "1px solid rgba(255,255,255,0.12)" }}
+        >
+          <p className="text-2xl font-black tracking-wide text-white mb-2">
+            Faith.{" "}
+            <span style={{ color: "#3DBFB0" }}>Community.</span>{" "}
+            Excellence.
+          </p>
+          <p className="text-sm italic" style={{ color: "rgba(255,255,255,0.45)" }}>
+            &ldquo;Whatever you do, do it all for the glory of God.&rdquo; - 1 Corinthians 10:31
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
