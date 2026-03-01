@@ -168,7 +168,7 @@ export default function GirlsIndoorPage() {
                   "The bonds formed at TVA last a lifetime. Our players and families become part of a faith community that supports one another beyond the sport.",
               },
             ].map((item) => (
-              <div key={item.title} className="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-shadow">
+              <div key={item.title} className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1" style={{ borderTop: `4px solid ${item.color}` }}>
                 <div
                   className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
                   style={{ backgroundColor: item.color }}

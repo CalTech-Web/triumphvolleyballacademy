@@ -176,6 +176,7 @@ export default function BoysIndoorPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group block bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                style={{ borderTop: `4px solid ${link.color}` }}
               >
                 <div
                   className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
