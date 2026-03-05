@@ -58,8 +58,8 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="#programs"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-white text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl"
-              style={{ backgroundColor: "#3DBFB0" }}
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl"
+              style={{ backgroundColor: "#3DBFB0", color: "#1E2D5C" }}
             >
               Explore Programs
               <ArrowRight size={20} />
@@ -107,7 +107,7 @@ export default function Home() {
                   />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(30,45,92,0.8) 0%, transparent 60%)" }} />
                   <div className="absolute bottom-4 left-4">
-                    <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ backgroundColor: "#3DBFB0", color: "white" }}>
+                    <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ backgroundColor: "#3DBFB0", color: "#1E2D5C" }}>
                       Boys
                     </span>
                   </div>
@@ -136,7 +136,7 @@ export default function Home() {
                   />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(30,45,92,0.8) 0%, transparent 60%)" }} />
                   <div className="absolute bottom-4 left-4">
-                    <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ backgroundColor: "#F4A07A", color: "white" }}>
+                    <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ backgroundColor: "#F4A07A", color: "#1E2D5C" }}>
                       Girls
                     </span>
                   </div>
@@ -165,7 +165,7 @@ export default function Home() {
                   />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(30,45,92,0.8) 0%, transparent 60%)" }} />
                   <div className="absolute bottom-4 left-4">
-                    <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ backgroundColor: "#3DBFB0", color: "white" }}>
+                    <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ backgroundColor: "#3DBFB0", color: "#1E2D5C" }}>
                       Sand
                     </span>
                   </div>
@@ -213,7 +213,7 @@ export default function Home() {
             >
               {stat.value}
             </div>
-            <div className="text-xs font-medium" style={{ color: "rgba(255,255,255,0.45)" }}>
+            <div className="text-xs font-medium" style={{ color: "rgba(255,255,255,0.75)" }}>
               {stat.sub}
             </div>
           </div>
@@ -225,13 +225,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold mb-6" style={{ backgroundColor: "rgba(61,191,176,0.15)", color: "#3DBFB0" }}>
+              <div className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold mb-6" style={{ backgroundColor: "rgba(61,191,176,0.15)", color: "#0B7065" }}>
                 Our Vision
               </div>
               <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight" style={{ color: "#1E2D5C" }}>
                 More Than
                 <br />
-                <span style={{ color: "#3DBFB0" }}>a Volleyball Club</span>
+                <span style={{ color: "#0B7065" }}>a Volleyball Club</span>
               </h2>
               <p className="text-base leading-relaxed mb-6" style={{ color: "#374151" }}>
                 TVA was built on the idea that sport is a platform. Athletes who come through this program compete hard. They also leave with something that outlasts any scoreboard.
@@ -273,7 +273,7 @@ export default function Home() {
               <div className="w-12 h-1 mx-auto rounded-full" style={{ backgroundColor: "#3DBFB0" }} />
             </div>
             <h2 className="text-3xl font-black" style={{ color: "#1E2D5C" }}>Official Partners</h2>
-            <p className="text-base mt-2" style={{ color: "#9ca3af" }}>
+            <p className="text-base mt-2" style={{ color: "#6b7280" }}>
               The partners who back TVA believe in what this program is building.
             </p>
           </div>
@@ -295,12 +295,12 @@ export default function Home() {
               <h3 className="text-2xl font-black mb-1" style={{ color: "#1E2D5C" }}>
                 SMACK Sportswear
               </h3>
-              <p className="text-xs font-bold uppercase tracking-widest mb-5" style={{ color: "#9ca3af" }}>
+              <p className="text-xs font-bold uppercase tracking-widest mb-5" style={{ color: "#6b7280" }}>
                 Official Uniform Partner
               </p>
               <span
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white transition-all duration-200 group-hover:scale-105"
-                style={{ backgroundColor: "#3DBFB0" }}
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-200 group-hover:scale-105"
+                style={{ backgroundColor: "#3DBFB0", color: "#1E2D5C" }}
               >
                 Visit Site <ArrowRight size={14} />
               </span>

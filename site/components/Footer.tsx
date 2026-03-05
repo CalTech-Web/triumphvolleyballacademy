@@ -15,7 +15,7 @@ export default function Footer() {
             <span style={{ color: "#3DBFB0" }}>Community.</span>{" "}
             Excellence.
           </p>
-          <p className="text-sm italic" style={{ color: "rgba(255,255,255,0.45)" }}>
+          <p className="text-sm italic" style={{ color: "rgba(255,255,255,0.75)" }}>
             &ldquo;Whatever you do, do it all for the glory of God.&rdquo; - 1 Corinthians 10:31
           </p>
         </div>
@@ -107,7 +107,7 @@ export default function Footer() {
             &copy; 2022-2026 Triumph Volleyball Academy. All Rights Reserved.
           </p>
           <div className="flex flex-col items-end gap-1">
-            <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
+            <p className="text-xs" style={{ color: "rgba(255,255,255,0.7)" }}>
               Uniforms by{" "}
               <a
                 href="https://www.smacksportswear.com"
@@ -118,7 +118,7 @@ export default function Footer() {
                 SMACK Sportswear
               </a>
             </p>
-            <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
+            <p className="text-xs" style={{ color: "rgba(255,255,255,0.7)" }}>
               Website by{" "}
               <a
                 href="https://www.caltechweb.com"
