@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Trophy, Users, Heart } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Trophy, Users, Heart } from "lucide-react";
 
 export default function GirlsIndoorPage() {
   return (
@@ -8,12 +9,11 @@ export default function GirlsIndoorPage() {
       <section className="relative py-24 overflow-hidden" style={{ backgroundColor: "#1E2D5C" }}>
         {/* Background team photo */}
         <Image
-          src="/photos/girls-team.png"
-          alt="TVA girls team"
+          src="/photos/girls-indoor-action.jpg"
+          alt="TVA girls indoor volleyball"
           fill
-          unoptimized
-          className="object-cover object-center"
-          style={{ opacity: 0.18 }}
+          className="object-cover object-top"
+          style={{ opacity: 0.28 }}
         />
         {/* Dark gradient overlay */}
         <div
@@ -39,7 +39,7 @@ export default function GirlsIndoorPage() {
                 Girls <span style={{ color: "#3DBFB0" }}>Indoor</span>
               </h1>
               <p className="text-xl leading-relaxed mb-8" style={{ color: "rgba(255,255,255,0.8)" }}>
-                Elite competitive indoor volleyball for girls youth athletes in the Central Valley. TVA builds champions on and off the court through faith-centered coaching and high-quality training.
+                Competitive indoor volleyball for girls in the Central Valley. The standard is high. The community sticks around.
               </p>
               <div className="flex flex-wrap gap-3">
                 <span className="px-4 py-2 rounded-full text-sm font-semibold" style={{ backgroundColor: "rgba(61,191,176,0.2)", color: "#3DBFB0" }}>
@@ -54,13 +54,13 @@ export default function GirlsIndoorPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full opacity-30" style={{ backgroundColor: "#F4A07A" }} />
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/photos/girls-team.png"
-                  alt="Girls volleyball team"
+                  src="/photos/girls-indoor-action.jpg"
+                  alt="TVA Girls Indoor volleyball"
                   width={600}
                   height={450}
-                  unoptimized
                   className="w-full h-auto"
                 />
               </div>
@@ -78,13 +78,13 @@ export default function GirlsIndoorPage() {
                 Program Overview
               </h2>
               <p className="text-lg leading-relaxed mb-4" style={{ color: "#374151" }}>
-                TVA Girls Indoor is a competitive club volleyball program dedicated to developing elite young athletes who compete with excellence and live with purpose. Our coaching staff provides high-quality instruction while building a culture rooted in Christian values.
+                TVA Girls Indoor is a competitive program, not a recreational one. The girls who thrive here come ready to work and stay because of what they find beyond the drill.
               </p>
               <p className="text-lg leading-relaxed mb-4" style={{ color: "#374151" }}>
-                We believe in developing the whole athlete - not just the volleyball player. Girls in the TVA program learn what it means to pursue excellence in sport while growing in faith, character, and leadership.
+                Every season, coaches develop skills while building something harder to measure - character. That means conversations about integrity, leadership, and what it looks like to compete with a purpose greater than winning.
               </p>
               <p className="text-lg leading-relaxed" style={{ color: "#374151" }}>
-                TVA is a family. Every player, parent, and coach is part of a community that supports one another both on and off the court. We are more than a club - we are a family built on faith.
+                TVA is a family. That word gets overused in sports, but here it holds. Players and parents from previous seasons still show up to games. The community outlasts the roster.
               </p>
             </div>
             <div className="bg-gray-50 rounded-2xl p-8">
@@ -92,12 +92,9 @@ export default function GirlsIndoorPage() {
               <h3 className="text-xl font-bold mb-3" style={{ color: "#1E2D5C" }}>What to Expect</h3>
               <ul className="space-y-3">
                 {[
-                  "Elite competitive training",
-                  "Skill development at all levels",
+                  "Competitive training with high standards",
                   "Faith-integrated coaching",
-                  "Strong team culture",
-                  "Character and leadership growth",
-                  "Community and family atmosphere",
+                  "Strong community and team culture",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm" style={{ color: "#374151" }}>
                     <span className="mt-1.5 w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: "#F4A07A" }} />
@@ -116,7 +113,6 @@ export default function GirlsIndoorPage() {
                 alt="Girls team group photo"
                 width={600}
                 height={400}
-                unoptimized
                 className="w-full h-auto"
               />
             </div>
@@ -126,7 +122,6 @@ export default function GirlsIndoorPage() {
                 alt="Girls program flyer"
                 width={600}
                 height={400}
-                unoptimized
                 className="w-full h-auto"
               />
             </div>
@@ -151,21 +146,21 @@ export default function GirlsIndoorPage() {
                 color: "#3DBFB0",
                 title: "Competitive Excellence",
                 description:
-                  "TVA Girls Indoor competes at the highest levels in the Central Valley, developing players who go on to play at the high school and collegiate level.",
+                  "TVA Girls Indoor competes at a serious level. Athletes from this program have gone on to play high school and collegiate volleyball, and they leave better equipped for life beyond the sport.",
               },
               {
                 icon: <Heart size={28} color="white" />,
                 color: "#F4A07A",
                 title: "Character Development",
                 description:
-                  "We measure success not just in wins, but in the character of our athletes. Faith, integrity, and leadership are developed through every practice and competition.",
+                  "A win matters. So does how you got there. At TVA, faith, integrity, and leadership are not sidebars - they are built into how the program runs.",
               },
               {
                 icon: <Users size={28} color="white" />,
                 color: "#1E2D5C",
                 title: "Team Community",
                 description:
-                  "The bonds formed at TVA last a lifetime. Our players and families become part of a faith community that supports one another beyond the sport.",
+                  "The families who come through TVA tend to stay connected long after the season ends. What gets built here is real, and that does not go away when the court lights turn off.",
               },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1" style={{ borderTop: `4px solid ${item.color}` }}>
@@ -187,16 +182,15 @@ export default function GirlsIndoorPage() {
         </div>
       </section>
 
-      {/* Faith quote CTA */}
+      {/* CTA */}
       <section className="relative py-20 text-center overflow-hidden" style={{ backgroundColor: "#1E2D5C" }}>
         {/* Background team photo */}
         <Image
-          src="/photos/girls-team.png"
-          alt="TVA girls team"
+          src="/photos/girls-indoor-action.jpg"
+          alt="TVA girls indoor volleyball"
           fill
-          unoptimized
-          className="object-cover object-center"
-          style={{ opacity: 0.18 }}
+          className="object-cover object-top"
+          style={{ opacity: 0.28 }}
         />
         {/* Dark gradient overlay */}
         <div
@@ -207,19 +201,32 @@ export default function GirlsIndoorPage() {
           }}
         />
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <blockquote className="text-2xl md:text-3xl font-bold italic text-white mb-4">
-            "Whatever you do, do it all for the glory of God."
+          <h2 className="text-4xl font-black text-white mb-4">Your Next Step at TVA</h2>
+          <p className="text-lg mb-8" style={{ color: "rgba(255,255,255,0.8)" }}>
+            Girls Indoor runs through the competitive season. Beach Academy opens every summer for girls who want to stay on the court. Same coaches. Same faith. Two different courts.
+          </p>
+          <blockquote className="text-xl font-bold italic mb-2" style={{ color: "rgba(255,255,255,0.65)" }}>
+            &ldquo;Whatever you do, do it all for the glory of God.&rdquo;
           </blockquote>
-          <p className="text-lg mb-10" style={{ color: "#3DBFB0" }}>
+          <p className="text-sm mb-10" style={{ color: "#3DBFB0" }}>
             1 Corinthians 10:31
           </p>
-          <a
-            href="/about"
-            className="inline-block px-8 py-4 rounded-xl font-bold text-white text-lg transition-all duration-200 hover:scale-105"
-            style={{ backgroundColor: "#3DBFB0" }}
-          >
-            Learn More About TVA
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/sand"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-white text-lg transition-all duration-200 hover:scale-105"
+              style={{ backgroundColor: "#3DBFB0" }}
+            >
+              Explore Sand Volleyball <ArrowRight size={18} />
+            </Link>
+            <Link
+              href="/about"
+              className="inline-block px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 border-2 hover:bg-white/10"
+              style={{ color: "#ffffff", borderColor: "rgba(255,255,255,0.4)" }}
+            >
+              About TVA
+            </Link>
+          </div>
         </div>
       </section>
     </div>

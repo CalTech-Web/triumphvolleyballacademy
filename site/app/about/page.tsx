@@ -12,7 +12,6 @@ export default function AboutPage() {
           src="/photos/boys-team.png"
           alt="TVA team"
           fill
-          unoptimized
           className="object-cover object-center"
           style={{ opacity: 0.18 }}
         />
@@ -40,7 +39,7 @@ export default function AboutPage() {
             About TVA
           </h1>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
-            Faith. Community. Excellence. These are not just words - they are the foundation of everything we do at Triumph Volleyball Academy.
+            Triumph Volleyball Academy has been developing youth athletes in the Central Valley since 2011. Faith is not a footnote here. It is the whole point.
           </p>
         </div>
       </section>
@@ -57,7 +56,6 @@ export default function AboutPage() {
                   alt="TVA Vision and Mission"
                   width={700}
                   height={500}
-                  unoptimized
                   className="w-full h-auto"
                 />
               </div>
@@ -113,7 +111,7 @@ export default function AboutPage() {
               Our Core Values
             </h2>
             <p className="text-lg max-w-2xl mx-auto" style={{ color: "#6b7280" }}>
-              At TVA, we believe athletics is a platform to impact the world for Jesus Christ.
+              The sport is the vehicle. These are the values that drive it.
             </p>
           </div>
 
@@ -124,21 +122,21 @@ export default function AboutPage() {
                 color: "#3DBFB0",
                 title: "Faith First",
                 description:
-                  "Every athlete and coach serves a higher purpose through sport. We integrate Christian values into training and team culture, creating an environment where faith grows alongside athletic skill.",
+                  "Volleyball is the vehicle here, not the destination. Every practice runs through the lens of 1 Corinthians 10:31. Athletes and coaches show up with a higher purpose in mind.",
               },
               {
                 icon: <Users size={28} color="white" />,
                 color: "#1E2D5C",
                 title: "Community",
                 description:
-                  "TVA is a family, not just a club. We build genuine relationships and support each other on and off the court. Our community extends beyond volleyball into life.",
+                  "TVA has been around since 2011, and the families who stick around do so because they found something real. Connections formed in this program tend to outlast the season.",
               },
               {
                 icon: <Target size={28} color="white" />,
                 color: "#F4A07A",
                 title: "Excellence",
                 description:
-                  "We push athletes to compete at their highest level. Excellence is not just about winning - it is about giving your best in everything you do, for the glory of God.",
+                  "The standard at TVA is high and on purpose. Coaches push athletes to train hard and compete harder. Winning matters here. It is never the only thing that matters.",
               },
             ].map((value) => (
               <div
@@ -171,7 +169,6 @@ export default function AboutPage() {
           src="/photos/tva-sand-courts.png"
           alt="TVA sand courts"
           fill
-          unoptimized
           className="object-cover object-center"
           style={{ opacity: 0.18 }}
         />
@@ -188,7 +185,7 @@ export default function AboutPage() {
             Join the TVA Family
           </h2>
           <p className="text-xl mb-10" style={{ color: "rgba(255,255,255,0.8)" }}>
-            Open to all youth athletes in the Central Valley. Come experience volleyball with purpose.
+            Open to any youth athlete in the Central Valley. Boys indoor, girls indoor, and beach academy. Three programs built around the same faith.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

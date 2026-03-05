@@ -12,13 +12,12 @@ export default function Home() {
       >
         {/* Background action photo */}
         <Image
-          src="/photos/tva-sand-courts-action.jpg"
-          alt="TVA athletes at the sand courts"
+          src="/photos/tva-sand-action-hero.jpg"
+          alt="TVA athletes playing at the sand courts"
           fill
-          unoptimized
           priority
           className="object-cover object-center"
-          style={{ opacity: 0.25 }}
+          style={{ opacity: 0.45 }}
         />
 
         {/* Background overlay gradient */}
@@ -53,7 +52,7 @@ export default function Home() {
           </h1>
 
           <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
-            Triumph Volleyball Academy - A Christian-based volleyball club in the Central Valley of California.
+            Founded in 2011, TVA is the Central Valley&apos;s faith-based competitive volleyball club for boys and girls. The sport is the platform. The mission is bigger.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -91,7 +90,7 @@ export default function Home() {
               Our Programs
             </h2>
             <p className="text-lg max-w-2xl mx-auto" style={{ color: "#6b7280" }}>
-              Competitive volleyball programs designed to develop athletes physically, mentally, and spiritually.
+              Three programs. One mission. Every athlete who trains with us gets coached on skill, shaped in character, and grounded in faith.
             </p>
           </div>
 
@@ -101,11 +100,10 @@ export default function Home() {
               <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative h-56 overflow-hidden">
                   <Image
-                    src="/photos/boys-team.png"
+                    src="/photos/boys-team-fullsize.webp"
                     alt="Boys Indoor Volleyball"
                     fill
-                    unoptimized
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(30,45,92,0.8) 0%, transparent 60%)" }} />
                   <div className="absolute bottom-4 left-4">
@@ -117,7 +115,7 @@ export default function Home() {
                 <div className="p-6" style={{ backgroundColor: "#1E2D5C" }}>
                   <h3 className="text-xl font-bold text-white mb-2">Boys Indoor</h3>
                   <p className="text-sm mb-4" style={{ color: "rgba(255,255,255,0.7)" }}>
-                    Competitive indoor volleyball for boys youth athletes. NCVA Power League and Fresno Heat League participation.
+                    Two competitive leagues - NCVA Power League and Fresno Heat League. Coaches who take the game and the faith seriously.
                   </p>
                   <span className="inline-flex items-center gap-1 text-sm font-semibold transition-colors" style={{ color: "#3DBFB0" }}>
                     Learn More <ArrowRight size={14} />
@@ -131,11 +129,10 @@ export default function Home() {
               <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative h-56 overflow-hidden">
                   <Image
-                    src="/photos/girls-team.png"
+                    src="/photos/girls-indoor-action.jpg"
                     alt="Girls Indoor Volleyball"
                     fill
-                    unoptimized
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(30,45,92,0.8) 0%, transparent 60%)" }} />
                   <div className="absolute bottom-4 left-4">
@@ -147,7 +144,7 @@ export default function Home() {
                 <div className="p-6" style={{ backgroundColor: "#1E2D5C" }}>
                   <h3 className="text-xl font-bold text-white mb-2">Girls Indoor</h3>
                   <p className="text-sm mb-4" style={{ color: "rgba(255,255,255,0.7)" }}>
-                    Elite competitive indoor volleyball for girls youth athletes. Building champions on and off the court.
+                    Competitive indoor volleyball for girls youth athletes. Coaches hold athletes to a real standard and train with faith at the center.
                   </p>
                   <span className="inline-flex items-center gap-1 text-sm font-semibold transition-colors" style={{ color: "#3DBFB0" }}>
                     Learn More <ArrowRight size={14} />
@@ -161,11 +158,10 @@ export default function Home() {
               <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative h-56 overflow-hidden">
                   <Image
-                    src="/photos/TVA-in-sand.jpeg"
+                    src="/photos/tva-sand-action-hero.jpg"
                     alt="Sand Volleyball"
                     fill
-                    unoptimized
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(30,45,92,0.8) 0%, transparent 60%)" }} />
                   <div className="absolute bottom-4 left-4">
@@ -177,7 +173,7 @@ export default function Home() {
                 <div className="p-6" style={{ backgroundColor: "#1E2D5C" }}>
                   <h3 className="text-xl font-bold text-white mb-2">Sand Volleyball</h3>
                   <p className="text-sm mb-4" style={{ color: "rgba(255,255,255,0.7)" }}>
-                    TVA Beach Academy 2025. Summer sand training for boys and girls. Registration open now.
+                    TVA Beach Academy returns each summer for boys and girls. Check back for 2026 registration details and dates.
                   </p>
                   <span className="inline-flex items-center gap-1 text-sm font-semibold transition-colors" style={{ color: "#3DBFB0" }}>
                     Learn More <ArrowRight size={14} />
@@ -189,23 +185,39 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Strip */}
-      <section className="py-16" style={{ backgroundColor: "#3DBFB0" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
-            {[
-              { value: "3", label: "Competitive Programs" },
-              { value: "Est. 2021", label: "Serving Central Valley" },
-              { value: "Boys + Girls", label: "Indoor and Sand" },
-              { value: "501(c)(3)", label: "Non-Profit Organization" },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <div className="text-4xl md:text-5xl font-black text-white mb-2">{stat.value}</div>
-                <div className="text-sm font-semibold uppercase tracking-wider" style={{ color: "rgba(255,255,255,0.85)" }}>{stat.label}</div>
-              </div>
-            ))}
+      {/* Stats */}
+      <section className="grid grid-cols-2 lg:grid-cols-4">
+        {[
+          { value: "3", label: "Programs", sub: "Boys Indoor · Girls Indoor · Sand", accent: "#3DBFB0", dark: false },
+          { value: "2011", label: "Founded", sub: "Serving the Central Valley", accent: "#F4A07A", dark: true },
+          { value: "Boys\n+ Girls", label: "Athletes", sub: "Indoor and Sand programs", accent: "#3DBFB0", dark: false },
+          { value: "501c3", label: "Non-Profit", sub: "Tax ID: 83-1610708", accent: "#F4A07A", dark: true },
+        ].map((stat) => (
+          <div
+            key={stat.label}
+            className="relative px-8 py-14 flex flex-col justify-between overflow-hidden"
+            style={{ backgroundColor: stat.dark ? "#1E2D5C" : "#162247" }}
+          >
+            <div
+              className="absolute top-0 left-0 right-0 h-1"
+              style={{ backgroundColor: stat.accent }}
+            />
+            <div
+              className="text-xs font-bold uppercase tracking-widest mb-4"
+              style={{ color: stat.accent }}
+            >
+              {stat.label}
+            </div>
+            <div
+              className="text-5xl md:text-6xl xl:text-7xl font-black text-white leading-none mb-3 whitespace-pre-line"
+            >
+              {stat.value}
+            </div>
+            <div className="text-xs font-medium" style={{ color: "rgba(255,255,255,0.45)" }}>
+              {stat.sub}
+            </div>
           </div>
-        </div>
+        ))}
       </section>
 
       {/* Faith Section */}
@@ -221,6 +233,9 @@ export default function Home() {
                 <br />
                 <span style={{ color: "#3DBFB0" }}>a Volleyball Club</span>
               </h2>
+              <p className="text-base leading-relaxed mb-6" style={{ color: "#374151" }}>
+                TVA was built on the idea that sport is a platform. Athletes who come through this program compete hard. They also leave with something that outlasts any scoreboard.
+              </p>
               <blockquote className="text-xl font-medium italic leading-relaxed mb-6" style={{ color: "#374151", borderLeft: "4px solid #3DBFB0", paddingLeft: "1.5rem" }}>
                 "To see the world impacted for Jesus Christ through the influence of athletes and coaches and the sport of volleyball."
               </blockquote>
@@ -242,69 +257,9 @@ export default function Home() {
                   alt="Vision and Mission"
                   width={600}
                   height={450}
-                  unoptimized
                   className="w-full h-auto"
                 />
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Beach Academy Feature */}
-      <section className="relative py-24 overflow-hidden">
-        {/* Background photo */}
-        <Image
-          src="/photos/sand-beach-academy-2025.webp"
-          alt="TVA Beach Academy 2025"
-          fill
-          unoptimized
-          className="object-cover object-center"
-          style={{ opacity: 0.35 }}
-        />
-        {/* Dark overlay */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(135deg, rgba(30,45,92,0.92) 0%, rgba(30,45,92,0.75) 50%, rgba(244,160,122,0.4) 100%)",
-          }}
-        />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold mb-6" style={{ backgroundColor: "rgba(244,160,122,0.25)", color: "#F4A07A" }}>
-              <span>☀</span>
-              Summer 2025
-            </div>
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-4 leading-tight">
-              TVA Beach Academy
-              <br />
-              <span style={{ color: "#F4A07A" }}>2025</span>
-            </h2>
-            <p className="text-xl mb-3" style={{ color: "rgba(255,255,255,0.85)" }}>
-              May 27 - July 17 - Tuesdays and Thursdays
-            </p>
-            <p className="text-lg mb-8 leading-relaxed" style={{ color: "rgba(255,255,255,0.7)" }}>
-              Boys and girls programs available. Sand training in a faith-centered environment. Spots are limited - register early.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdMfh_o_ZMGGGuGrCp2Pe6xgjgshrWBiyJ6xAZR3MgB3VAGPA/viewform?pli=1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-white text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl"
-                style={{ backgroundColor: "#F4A07A" }}
-              >
-                Register Now
-                <ArrowRight size={20} />
-              </a>
-              <Link
-                href="/sand"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 border-2 hover:bg-white/10"
-                style={{ color: "#ffffff", borderColor: "rgba(255,255,255,0.4)" }}
-              >
-                Learn More
-              </Link>
             </div>
           </div>
         </div>
@@ -319,7 +274,7 @@ export default function Home() {
             </div>
             <h2 className="text-3xl font-black" style={{ color: "#1E2D5C" }}>Official Partners</h2>
             <p className="text-base mt-2" style={{ color: "#9ca3af" }}>
-              Proud to partner with organizations that share our commitment to excellence.
+              The partners who back TVA believe in what this program is building.
             </p>
           </div>
 

@@ -28,7 +28,6 @@ export default function Footer() {
               alt="Triumph Volleyball Academy"
               width={140}
               height={48}
-              unoptimized
               className="h-10 w-auto mb-4"
             />
             <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.7)" }}>
@@ -96,17 +95,6 @@ export default function Footer() {
                   About
                 </Link>
               </li>
-              <li>
-                <a
-                  href="https://www.smacksportswear.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm transition-colors hover:text-white"
-                  style={{ color: "rgba(255,255,255,0.7)" }}
-                >
-                  Sponsors
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -118,17 +106,30 @@ export default function Footer() {
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
             &copy; 2022-2026 Triumph Volleyball Academy. All Rights Reserved.
           </p>
-          <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
-            Uniforms by{" "}
-            <a
-              href="https://www.smacksportswear.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline transition-colors hover:text-white/70"
-            >
-              SMACK Sportswear
-            </a>
-          </p>
+          <div className="flex flex-col items-end gap-1">
+            <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
+              Uniforms by{" "}
+              <a
+                href="https://www.smacksportswear.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline transition-colors hover:text-white/70"
+              >
+                SMACK Sportswear
+              </a>
+            </p>
+            <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
+              Website by{" "}
+              <a
+                href="https://www.caltechweb.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline transition-colors hover:text-white/70"
+              >
+                CalTech Web
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

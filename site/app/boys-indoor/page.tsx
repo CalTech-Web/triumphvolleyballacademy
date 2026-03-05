@@ -6,19 +6,19 @@ export default function BoysIndoorPage() {
   const importantLinks = [
     {
       title: "NCVA Membership",
-      description: "Register for your NCVA membership - required for all competitive play in Northern California.",
+      description: "NCVA membership is required before competitive play begins. If your son is joining TVA Boys Indoor, this is the first step.",
       href: "https://ncva.com/info/registration/login/",
       color: "#3DBFB0",
     },
     {
       title: "NCVA Power League Info",
-      description: "Learn about the NCVA Boys Power League schedule, divisions, and competition details.",
+      description: "The Power League is Northern California's primary boys junior circuit. TVA competes here throughout the season.",
       href: "https://ncva.com/boys-division/",
       color: "#1E2D5C",
     },
     {
       title: "Heat League Information",
-      description: "Get details on the Fresno Heat League for local boys competitive volleyball.",
+      description: "The Fresno Heat League runs locally and gives TVA boys extra match reps over the course of the year.",
       href: "https://fresnoheat.com/boys-heat-league",
       color: "#F4A07A",
     },
@@ -30,12 +30,11 @@ export default function BoysIndoorPage() {
       <section className="relative py-24 overflow-hidden" style={{ backgroundColor: "#1E2D5C" }}>
         {/* Background team photo */}
         <Image
-          src="/photos/boys-recent.webp"
+          src="/photos/boys-team-faces.webp"
           alt="TVA boys team"
           fill
-          unoptimized
-          className="object-cover object-center"
-          style={{ opacity: 0.2 }}
+          className="object-cover object-top"
+          style={{ opacity: 0.3 }}
         />
         {/* Dark gradient overlay */}
         <div
@@ -61,7 +60,7 @@ export default function BoysIndoorPage() {
                 Boys <span style={{ color: "#3DBFB0" }}>Indoor</span>
               </h1>
               <p className="text-xl leading-relaxed mb-8" style={{ color: "rgba(255,255,255,0.8)" }}>
-                Competitive club volleyball for boys youth athletes in the Central Valley. TVA develops players through high-level training, NCVA Power League competition, and Fresno Heat League participation.
+                Competitive club volleyball for boys in the Central Valley. NCVA Power League competition, Fresno Heat League, and coaches who take both the game and the faith seriously.
               </p>
               <div className="flex flex-wrap gap-3">
                 <span className="px-4 py-2 rounded-full text-sm font-semibold" style={{ backgroundColor: "rgba(61,191,176,0.2)", color: "#3DBFB0" }}>
@@ -76,13 +75,13 @@ export default function BoysIndoorPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full opacity-30" style={{ backgroundColor: "#3DBFB0" }} />
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/photos/TVA-boys-action.png"
-                  alt="Boys volleyball action"
+                  src="/photos/boys-team-fullsize.webp"
+                  alt="TVA Boys Indoor team"
                   width={600}
                   height={450}
-                  unoptimized
                   className="w-full h-auto"
                 />
               </div>
@@ -100,13 +99,13 @@ export default function BoysIndoorPage() {
                 Program Overview
               </h2>
               <p className="text-lg leading-relaxed mb-4" style={{ color: "#374151" }}>
-                TVA Boys Indoor is a competitive club volleyball program built for young men who want to develop their game at a high level while growing in faith and character. Our coaching staff is committed to developing the whole athlete - physically, mentally, and spiritually.
+                TVA Boys Indoor competes in the NCVA Power League, one of California&apos;s most contested junior circuits. Players also get Fresno Heat League matches throughout the season. That is two competitive outlets, more game reps, and more real development.
               </p>
               <p className="text-lg leading-relaxed mb-4" style={{ color: "#374151" }}>
-                We compete in the NCVA (Northern California Volleyball Association) Power League, one of the most competitive junior volleyball circuits in California. Athletes also participate in the Fresno Heat League for additional local competition experience.
+                The program started in 2011. Coaches here believe in the mission because they are part of it. Hard practices are paired with conversations about character, integrity, and what it means to compete for something larger than a scoreboard.
               </p>
               <p className="text-lg leading-relaxed" style={{ color: "#374151" }}>
-                At TVA, volleyball is a platform. We play with purpose - to develop champions who will impact their communities and the world for Jesus Christ.
+                Boys who join TVA are not showing up for drills alone. They are stepping into a program built on the belief that sport is a platform for something bigger. That shows up in how the teams carry themselves - on the court and off it.
               </p>
             </div>
             <div className="bg-gray-50 rounded-2xl p-8">
@@ -114,12 +113,9 @@ export default function BoysIndoorPage() {
               <h3 className="text-xl font-bold mb-3" style={{ color: "#1E2D5C" }}>What to Expect</h3>
               <ul className="space-y-3">
                 {[
-                  "High-level competitive training",
-                  "NCVA Power League competition",
-                  "Fresno Heat League participation",
-                  "Faith-integrated coaching",
-                  "Character development",
-                  "Team community and culture",
+                  "NCVA Power League and Heat League competition",
+                  "Faith-integrated coaching and character development",
+                  "Strong team culture and community",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm" style={{ color: "#374151" }}>
                     <span className="mt-1.5 w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: "#3DBFB0" }} />
@@ -138,7 +134,6 @@ export default function BoysIndoorPage() {
                 alt="Boys team group photo"
                 width={600}
                 height={400}
-                unoptimized
                 className="w-full h-auto"
               />
             </div>
@@ -148,7 +143,6 @@ export default function BoysIndoorPage() {
                 alt="Recent boys team photo"
                 width={600}
                 height={400}
-                unoptimized
                 className="w-full h-auto"
               />
             </div>
@@ -164,7 +158,7 @@ export default function BoysIndoorPage() {
               Important Links
             </h2>
             <p className="text-lg" style={{ color: "#6b7280" }}>
-              Everything you need to get started with Boys Indoor volleyball at TVA.
+              Here is where to go once you are ready to join TVA Boys Indoor.
             </p>
           </div>
 
@@ -219,7 +213,6 @@ export default function BoysIndoorPage() {
                 alt="Boys club achievement"
                 width={700}
                 height={500}
-                unoptimized
                 className="w-full h-auto"
               />
             </div>
@@ -229,7 +222,6 @@ export default function BoysIndoorPage() {
                 alt="Boys club achievement"
                 width={700}
                 height={500}
-                unoptimized
                 className="w-full h-auto"
               />
             </div>
@@ -244,7 +236,6 @@ export default function BoysIndoorPage() {
           src="/photos/TVA-boys-action.png"
           alt="TVA boys volleyball action"
           fill
-          unoptimized
           className="object-cover object-center"
           style={{ opacity: 0.18 }}
         />
@@ -259,7 +250,7 @@ export default function BoysIndoorPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-black text-white mb-4">Ready to Join?</h2>
           <p className="text-lg mb-8" style={{ color: "rgba(255,255,255,0.8)" }}>
-            Start your NCVA membership and get ready to compete with TVA Boys Indoor.
+            NCVA registration is required before your son can compete with TVA. Handle that first. Everything else follows.
           </p>
           <a
             href="https://ncva.com/info/registration/login/"

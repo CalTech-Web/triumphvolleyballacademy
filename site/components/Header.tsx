@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -20,18 +20,6 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 shadow-lg" style={{ backgroundColor: "#1E2D5C" }}>
-      {/* Announcement Bar */}
-      <div className="text-center py-2 px-4" style={{ backgroundColor: "#F4A07A" }}>
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdMfh_o_ZMGGGuGrCp2Pe6xgjgshrWBiyJ6xAZR3MgB3VAGPA/viewform?pli=1"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm font-bold text-white hover:opacity-90 transition-opacity"
-        >
-          TVA Beach Academy 2025 - Summer Registration Now Open
-          <ArrowRight size={14} />
-        </a>
-      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-3 flex-shrink-0">
@@ -40,7 +28,6 @@ export default function Header() {
               alt="Triumph Volleyball Academy"
               width={140}
               height={48}
-              unoptimized
               className="h-12 w-auto"
             />
           </Link>
