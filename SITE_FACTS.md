@@ -11,7 +11,7 @@
 | **Abbreviation** | TVA |
 | **Website** | triumphvolleyballacademy.com |
 | **Phone** | [Not listed publicly] |
-| **Founded** | 2021-2022 |
+| **Founded** | 2011 |
 | **TAX ID** | 83-1610708 (Non-profit) |
 | **Copyright** | 2022-2026 Triumph Volleyball Academy - All Rights Reserved. |
 

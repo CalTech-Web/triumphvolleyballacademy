@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -20,7 +21,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
             <Image
@@ -44,7 +45,7 @@ export default function Footer() {
               className="font-bold text-sm uppercase tracking-wider mb-4"
               style={{ color: "#3DBFB0" }}
             >
-              Programs
+              Teams
             </h3>
             <ul className="space-y-2">
               <li>
@@ -94,6 +95,30 @@ export default function Footer() {
                 >
                   About
                 </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3
+              className="font-bold text-sm uppercase tracking-wider mb-4"
+              style={{ color: "#3DBFB0" }}
+            >
+              Contact
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="https://www.instagram.com/triumphvballacademy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm transition-colors hover:text-white"
+                  style={{ color: "rgba(255,255,255,0.7)" }}
+                >
+                  <Instagram size={14} />
+                  @triumphvballacademy
+                </a>
               </li>
             </ul>
           </div>

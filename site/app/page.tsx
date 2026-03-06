@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight, Star, Instagram } from "lucide-react";
 
 export default function Home() {
   return (
@@ -53,16 +53,16 @@ export default function Home() {
           </h1>
 
           <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
-            Founded in 2011, TVA is the Central Valley&apos;s faith-based competitive volleyball club for boys and girls. The sport is the platform. The mission is bigger.
+            Est. 2011, TVA is the Central Valley&apos;s faith-based competitive volleyball club for boys and girls. The sport is the platform. The mission is bigger.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="#programs"
+              href="#teams"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl"
               style={{ backgroundColor: "#3DBFB0", color: "#1E2D5C" }}
             >
-              Explore Programs
+              Explore Teams
               <ArrowRight size={20} />
             </Link>
             <Link
@@ -83,12 +83,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Programs Section */}
-      <section id="programs" className="py-20 bg-white">
+      {/* Teams Section */}
+      <section id="teams" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-4xl md:text-5xl font-black mb-4" style={{ color: "#1E2D5C" }}>
-              Our Programs
+              Our Teams
             </h2>
             <p className="text-lg max-w-2xl mx-auto" style={{ color: "#6b7280" }}>
               Three programs. One mission. Every athlete who trains with us gets coached on skill, shaped in character, and grounded in faith.
@@ -101,7 +101,7 @@ export default function Home() {
               <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative h-56 overflow-hidden">
                   <Image
-                    src="/photos/boys-team-fullsize.webp"
+                    src="/photos/boys-new-1.jpg"
                     alt="Boys Indoor Volleyball"
                     fill
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
@@ -130,7 +130,7 @@ export default function Home() {
               <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative h-56 overflow-hidden">
                   <Image
-                    src="/photos/girls-indoor-action.jpg"
+                    src="/photos/girls-hero.jpg"
                     alt="Girls Indoor Volleyball"
                     fill
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
@@ -159,7 +159,7 @@ export default function Home() {
               <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative h-56 overflow-hidden">
                   <Image
-                    src="/photos/tva-sand-action-hero.jpg"
+                    src="/photos/beach-new-1.jpg"
                     alt="Sand Volleyball"
                     fill
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
@@ -174,7 +174,7 @@ export default function Home() {
                 <div className="p-6" style={{ backgroundColor: "#1E2D5C" }}>
                   <h3 className="text-xl font-bold text-white mb-2">Sand Volleyball</h3>
                   <p className="text-sm mb-4" style={{ color: "rgba(255,255,255,0.7)" }}>
-                    TVA Beach Academy returns each summer for boys and girls. Check back for 2026 registration details and dates.
+                    Coming Summer 2026. TVA Beach Academy returns for boys and girls. Registration details coming soon.
                   </p>
                   <span className="inline-flex items-center gap-1 text-sm font-semibold transition-colors" style={{ color: "#3DBFB0" }}>
                     Learn More <ArrowRight size={14} />
@@ -186,18 +186,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats */}
+      {/* Stats Banner */}
       <section className="grid grid-cols-2 lg:grid-cols-4">
         {[
-          { value: "3", label: "Programs", sub: "Boys Indoor · Girls Indoor · Sand", accent: "#3DBFB0", dark: false },
-          { value: "2011", label: "Founded", sub: "Serving the Central Valley", accent: "#F4A07A", dark: true },
-          { value: "Boys\n+ Girls", label: "Athletes", sub: "Indoor and Sand programs", accent: "#3DBFB0", dark: false },
-          { value: "501c3", label: "Non-Profit", sub: "Tax ID: 83-1610708", accent: "#F4A07A", dark: true },
+          { value: "3", label: "Programs", sub: "Boys Indoor · Girls Indoor · Sand", accent: "#3DBFB0", bg: "#1565C0" },
+          { value: "Est. 2011", label: "Founded", sub: "Serving the Central Valley", accent: "#F4A07A", bg: "#1976D2" },
+          { value: "30+", label: "Collegiate Alumni", sub: "Athletes playing at the next level", accent: "#3DBFB0", bg: "#1565C0" },
+          { value: "501c3", label: "Non-Profit", sub: "Tax ID: 83-1610708", accent: "#F4A07A", bg: "#1976D2" },
         ].map((stat) => (
           <div
             key={stat.label}
             className="relative px-8 py-14 flex flex-col justify-between overflow-hidden"
-            style={{ backgroundColor: stat.dark ? "#1E2D5C" : "#162247" }}
+            style={{ backgroundColor: stat.bg }}
           >
             <div
               className="absolute top-0 left-0 right-0 h-1"
@@ -210,7 +210,7 @@ export default function Home() {
               {stat.label}
             </div>
             <div
-              className="text-5xl md:text-6xl xl:text-7xl font-black text-white leading-none mb-3 whitespace-pre-line"
+              className="text-4xl md:text-5xl xl:text-6xl font-black text-white leading-none mb-3 whitespace-pre-line"
             >
               {stat.value}
             </div>
@@ -238,11 +238,11 @@ export default function Home() {
                 TVA was built on the idea that sport is a platform. Athletes who come through this program compete hard. They also leave with something that outlasts any scoreboard.
               </p>
               <blockquote className="text-xl font-medium italic leading-relaxed mb-6" style={{ color: "#374151", borderLeft: "4px solid #3DBFB0", paddingLeft: "1.5rem" }}>
-                "To see the world impacted for Jesus Christ through the influence of athletes and coaches and the sport of volleyball."
+                &ldquo;To see the world impacted for Jesus Christ through the influence of athletes and coaches and the sport of volleyball.&rdquo;
               </blockquote>
               <div className="p-6 rounded-2xl" style={{ backgroundColor: "#1E2D5C" }}>
                 <p className="text-lg font-semibold italic text-white mb-2">
-                  "Whatever you do, do it all for the glory of God."
+                  &ldquo;Whatever you do, do it all for the glory of God.&rdquo;
                 </p>
                 <p style={{ color: "#3DBFB0" }} className="text-sm font-bold">
                   - 1 Corinthians 10:31
@@ -262,6 +262,67 @@ export default function Home() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Instagram Section */}
+      <section className="py-20" style={{ backgroundColor: "#1E2D5C" }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full text-sm font-semibold" style={{ backgroundColor: "rgba(61,191,176,0.15)", color: "#3DBFB0" }}>
+              <Instagram size={16} />
+              @triumphvballacademy
+            </div>
+            <h2 className="text-3xl font-black text-white mb-2">Follow Our Journey</h2>
+            <p className="text-base" style={{ color: "rgba(255,255,255,0.65)" }}>
+              Game days, team moments, and faith in action.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-10">
+            {[
+              { src: "/photos/boys-new-1.jpg", alt: "TVA Boys team" },
+              { src: "/photos/girls-hero.jpg", alt: "TVA Girls team" },
+              { src: "/photos/beach-new-1.jpg", alt: "TVA Sand volleyball" },
+              { src: "/photos/boys-new-2.jpg", alt: "TVA Boys action" },
+              { src: "/photos/girls-new-1.jpg", alt: "TVA Girls action" },
+              { src: "/photos/beach-new-2.jpg", alt: "TVA Beach courts" },
+            ].map((post, i) => (
+              <a
+                key={i}
+                href="https://www.instagram.com/triumphvballacademy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative aspect-square overflow-hidden rounded-xl block"
+              >
+                <Image
+                  src={post.src}
+                  alt={post.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div
+                  className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{ backgroundColor: "rgba(30,45,92,0.6)" }}
+                >
+                  <Instagram size={32} color="white" />
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <a
+              href="https://www.instagram.com/triumphvballacademy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 hover:scale-105"
+              style={{ backgroundColor: "#3DBFB0", color: "#1E2D5C" }}
+            >
+              <Instagram size={20} />
+              Follow on Instagram
+            </a>
           </div>
         </div>
       </section>
