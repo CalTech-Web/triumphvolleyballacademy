@@ -282,12 +282,12 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-10">
             {[
-              { src: "/photos/boys-new-1.jpg", alt: "TVA Boys team" },
-              { src: "/photos/girls-hero.jpg", alt: "TVA Girls team" },
-              { src: "/photos/beach-new-1.jpg", alt: "TVA Sand volleyball" },
-              { src: "/photos/boys-new-2.jpg", alt: "TVA Boys action" },
-              { src: "/photos/girls-new-1.jpg", alt: "TVA Girls action" },
-              { src: "/photos/beach-new-2.jpg", alt: "TVA Beach courts" },
+              { src: "/photos/ig-post-3.jpg", alt: "TVA Girls team photo" },
+              { src: "/photos/ig-post-5.jpg", alt: "TVA Girls team in uniform" },
+              { src: "/photos/ig-post-4.jpg", alt: "TVA team huddle - Spread the Love of Jesus" },
+              { src: "/photos/ig-post-2.jpg", alt: "TVA player portraits" },
+              { src: "/photos/ig-post-6.jpg", alt: "TVA team celebration" },
+              { src: "/photos/ig-post-1.jpg", alt: "Isaiah 42:13 - TVA verse" },
             ].map((post, i) => (
               <a
                 key={i}
