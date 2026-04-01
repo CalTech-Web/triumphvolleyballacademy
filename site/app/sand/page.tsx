@@ -79,6 +79,53 @@ export default function SandPage() {
         </div>
       </section>
 
+      {/* Top Tier Beach */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div
+                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold mb-5"
+                style={{ backgroundColor: "rgba(61,191,176,0.12)", color: "#3DBFB0" }}
+              >
+                <Sun size={13} />
+                Competitive League
+              </div>
+              <h2 className="text-4xl font-black mb-5" style={{ color: "#1E2D5C" }}>
+                Top Tier Beach
+              </h2>
+              <p className="text-lg leading-relaxed mb-4" style={{ color: "#374151" }}>
+                Top Tier Beach is a high-level competitive beach volleyball league for serious athletes looking to test their game against the best. TVA athletes compete in Top Tier Beach as part of their sand development pathway.
+              </p>
+              <p className="text-base leading-relaxed" style={{ color: "#374151" }}>
+                More details on the upcoming season coming soon. Email us for the latest information.
+              </p>
+              <div className="mt-6">
+                <a
+                  href="mailto:tvabeachvb@gmail.com"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white text-sm transition-all duration-200 hover:scale-105"
+                  style={{ backgroundColor: "#3DBFB0" }}
+                >
+                  <Mail size={16} />
+                  Get More Info
+                </a>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/photos/beach-new-3.jpg"
+                  alt="Top Tier Beach volleyball"
+                  width={600}
+                  height={450}
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact */}
       <section className="py-16" style={{ backgroundColor: "#F8F9FA" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

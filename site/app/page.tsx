@@ -88,7 +88,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-4xl md:text-5xl font-black mb-4" style={{ color: "#1E2D5C" }}>
-              Our Teams
+              Our Volleyball Teams
             </h2>
             <p className="text-lg max-w-2xl mx-auto" style={{ color: "#6b7280" }}>
               Three programs. One mission. Every athlete who trains with us gets coached on skill, shaped in character, and grounded in faith.
