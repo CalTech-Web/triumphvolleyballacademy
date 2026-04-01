@@ -370,6 +370,34 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Bottom CTA */}
+      <section className="py-20" style={{ backgroundColor: "#1E2D5C" }}>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
+            Ready to Join TVA?
+          </h2>
+          <p className="text-xl mb-10" style={{ color: "rgba(255,255,255,0.75)" }}>
+            Contact the program director for your athlete directly.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="mailto:coachgugtva@gmail.com?subject=Boys Indoor - Program Inquiry"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 hover:scale-105"
+              style={{ backgroundColor: "#3DBFB0", color: "#1E2D5C" }}
+            >
+              Boys Indoor <ArrowRight size={18} />
+            </a>
+            <a
+              href="mailto:coachwoldtva@gmail.com?subject=Girls Indoor - Program Inquiry"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 border-2 hover:bg-white/10"
+              style={{ color: "#ffffff", borderColor: "rgba(255,255,255,0.4)" }}
+            >
+              Girls Indoor <ArrowRight size={18} />
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
