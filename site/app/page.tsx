@@ -189,10 +189,10 @@ export default function Home() {
       {/* Stats Banner */}
       <section className="grid grid-cols-2 lg:grid-cols-4">
         {[
-          { value: "3", label: "Programs", sub: "Boys Indoor · Girls Indoor · Sand", accent: "#3DBFB0", bg: "#1565C0" },
-          { value: "Est. 2011", label: "Founded", sub: "Serving the Central Valley", accent: "#F4A07A", bg: "#1976D2" },
-          { value: "30+", label: "Collegiate Alumni", sub: "Athletes playing at the next level", accent: "#3DBFB0", bg: "#1565C0" },
-          { value: "501c3", label: "Non-Profit", sub: "Tax ID: 83-1610708", accent: "#F4A07A", bg: "#1976D2" },
+          { value: "3", label: "Programs", sub: "Boys Indoor · Girls Indoor · Sand", accent: "#3DBFB0", bg: "#0D47A1" },
+          { value: "Est. 2011", label: "Founded", sub: "Serving the Central Valley", accent: "#F4A07A", bg: "#1250A8" },
+          { value: "30+", label: "Collegiate Alumni", sub: "Athletes playing at the next level", accent: "#3DBFB0", bg: "#0D47A1" },
+          { value: "501c3", label: "Non-Profit", sub: "Tax ID: 83-1610708", accent: "#F4A07A", bg: "#1250A8" },
         ].map((stat) => (
           <div
             key={stat.label}
@@ -205,7 +205,7 @@ export default function Home() {
             />
             <div
               className="text-xs font-bold uppercase tracking-widest mb-4"
-              style={{ color: stat.accent }}
+              style={{ color: "#ffffff" }}
             >
               {stat.label}
             </div>
