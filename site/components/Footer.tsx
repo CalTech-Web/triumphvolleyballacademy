@@ -75,6 +75,15 @@ export default function Footer() {
                   Sand Volleyball
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/camps"
+                  className="text-sm transition-colors hover:text-white"
+                  style={{ color: "rgba(255,255,255,0.7)" }}
+                >
+                  Camps
+                </Link>
+              </li>
             </ul>
           </div>
 

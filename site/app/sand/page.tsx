@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Calendar, Sun } from "lucide-react";
+import { ArrowRight, Calendar, Sun, Mail } from "lucide-react";
 
 export default function SandPage() {
   return (
@@ -76,6 +76,26 @@ export default function SandPage() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="py-16" style={{ backgroundColor: "#F8F9FA" }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-black mb-3" style={{ color: "#1E2D5C" }}>
+            Questions About Beach Academy?
+          </h2>
+          <p className="text-lg mb-6" style={{ color: "#6b7280" }}>
+            Reach out to the beach program directly.
+          </p>
+          <a
+            href="mailto:tvabeachvb@gmail.com"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-white text-lg transition-all duration-200 hover:scale-105"
+            style={{ backgroundColor: "#3DBFB0" }}
+          >
+            <Mail size={20} />
+            tvabeachvb@gmail.com
+          </a>
         </div>
       </section>
 
