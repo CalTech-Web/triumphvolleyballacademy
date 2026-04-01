@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ExternalLink, Mail, Trophy, Users, ArrowRight } from "lucide-react";
+import { ExternalLink, Mail, Users, ArrowRight } from "lucide-react";
 
 export default function BoysIndoorPage() {
   const importantLinks = [
@@ -28,21 +28,6 @@ export default function BoysIndoorPage() {
       href: "https://fresnoheat.com/boys-heat-league",
       color: "#3DBFB0",
     },
-  ];
-
-  const alumniPhotos = [
-    "/photos/alumni-1.jpg",
-    "/photos/alumni-2.jpg",
-    "/photos/alumni-3.jpg",
-    "/photos/alumni-4.jpg",
-    "/photos/alumni-5.jpg",
-    "/photos/alumni-6.jpg",
-    "/photos/alumni-7.jpg",
-    "/photos/alumni-8.jpg",
-    "/photos/alumni-9.jpg",
-    "/photos/alumni-10.jpg",
-    "/photos/alumni-11.jpg",
-    "/photos/alumni-12.jpg",
   ];
 
   return (
@@ -226,34 +211,6 @@ export default function BoysIndoorPage() {
                   Visit Site <ArrowRight size={14} />
                 </span>
               </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Alumni */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-4 mb-4">
-            <Trophy size={36} style={{ color: "#3DBFB0" }} />
-            <h2 className="text-4xl font-black" style={{ color: "#1E2D5C" }}>
-              Alumni
-            </h2>
-          </div>
-          <p className="text-lg mb-12" style={{ color: "#6b7280" }}>
-            30+ TVA athletes have gone on to play at the collegiate level. This is what the mission looks like years later.
-          </p>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {alumniPhotos.map((src, i) => (
-              <div key={i} className="rounded-xl overflow-hidden shadow-md aspect-square relative">
-                <Image
-                  src={src}
-                  alt={`TVA alumni ${i + 1}`}
-                  fill
-                  className="object-cover object-top"
-                />
-              </div>
             ))}
           </div>
         </div>
