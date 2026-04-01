@@ -17,6 +17,7 @@ export default function Home() {
           fill
           priority
           fetchPriority="high"
+          quality={55}
           className="object-cover object-center"
           style={{ opacity: 0.45 }}
         />
