@@ -13,6 +13,7 @@ const navLinks = [
   { href: "/girls-indoor", label: "Girls Indoor" },
   { href: "/sand", label: "Sand" },
   { href: "/camps", label: "Camps" },
+  { href: "/coaches", label: "Coaches" },
 ];
 
 export default function Header() {
