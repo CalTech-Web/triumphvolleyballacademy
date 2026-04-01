@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { ExternalLink, Mail, Trophy, Users, ArrowRight } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Girls Indoor Volleyball | Triumph Volleyball Academy",
+  description:
+    "Competitive indoor volleyball for girls in the Central Valley. TVA Girls features 30+ collegiate alumni and faith-integrated coaching from experienced staff.",
+};
 
 export default function GirlsIndoorPage() {
   const importantLinks = [

@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Calendar, Sun, Mail } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Beach Academy | Triumph Volleyball Academy",
+  description:
+    "TVA Beach Academy runs each summer for boys and girls in the Central Valley. Expert sand volleyball coaching with faith integrated into every session.",
+};
 
 export default function SandPage() {
   return (

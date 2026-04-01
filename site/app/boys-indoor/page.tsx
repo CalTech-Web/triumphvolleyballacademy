@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink, Mail, Users, ArrowRight } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Boys Indoor Volleyball | Triumph Volleyball Academy",
+  description:
+    "TVA Boys Indoor competes in the NCVA Power League and Fresno Heat League. Faith-based competitive club volleyball for boys in the Central Valley of California.",
+};
 
 export default function BoysIndoorPage() {
   const importantLinks = [

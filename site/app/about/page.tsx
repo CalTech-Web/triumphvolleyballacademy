@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Heart, Target, Users, BookOpen } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "About TVA | Triumph Volleyball Academy",
+  description:
+    "Founded in 2011, TVA develops Central Valley youth athletes physically, mentally, and spiritually through faith-based competitive volleyball in California.",
+};
 
 export default function AboutPage() {
   return (
