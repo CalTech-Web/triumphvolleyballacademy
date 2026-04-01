@@ -9,6 +9,41 @@ export const metadata: Metadata = {
     "A Christian-based volleyball club in the Central Valley of California offering competitive boys indoor, girls indoor, and sand volleyball programs.",
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "SportsOrganization",
+  name: "Triumph Volleyball Academy",
+  alternateName: "TVA",
+  url: "https://triumphvolleyballacademy.com",
+  logo: "https://triumphvolleyballacademy.com/logos/TVA-Logo.png",
+  description:
+    "A Christian-based volleyball club in the Central Valley of California offering competitive boys indoor, girls indoor, and sand volleyball programs for youth athletes.",
+  foundingDate: "2011",
+  sport: "Volleyball",
+  areaServed: {
+    "@type": "Place",
+    name: "Central Valley, California",
+  },
+  sameAs: ["https://www.instagram.com/triumphvballacademy/"],
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      email: "coachgugtva@gmail.com",
+      contactType: "Boys Indoor Program",
+    },
+    {
+      "@type": "ContactPoint",
+      email: "coachwoldtva@gmail.com",
+      contactType: "Girls Indoor Program",
+    },
+    {
+      "@type": "ContactPoint",
+      email: "tvabeachvb@gmail.com",
+      contactType: "Beach Volleyball Program",
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -17,6 +52,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
         <Header />
         <main>{children}</main>
         <Footer />
