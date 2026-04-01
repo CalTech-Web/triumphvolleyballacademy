@@ -314,15 +314,25 @@ export default function Home() {
 
           <div className="text-center">
             <a
-              href="https://www.instagram.com/triumphvballacademy/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 hover:scale-105"
+              href="mailto:coachgugtva@gmail.com?subject=TVA Program Inquiry"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl mb-4"
               style={{ backgroundColor: "#3DBFB0", color: "#1E2D5C" }}
             >
-              <Instagram size={20} />
-              Follow on Instagram
+              Contact a Coach
+              <ArrowRight size={20} />
             </a>
+            <div>
+              <a
+                href="https://www.instagram.com/triumphvballacademy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-semibold transition-opacity hover:opacity-80"
+                style={{ color: "rgba(255,255,255,0.55)" }}
+              >
+                <Instagram size={16} />
+                Follow on Instagram
+              </a>
+            </div>
           </div>
         </div>
       </section>
