@@ -7,6 +7,19 @@ export const metadata: Metadata = {
   title: "About TVA | Triumph Volleyball Academy",
   description:
     "Founded in 2011, TVA develops Central Valley youth athletes physically, mentally, and spiritually through faith-based competitive volleyball in California.",
+  openGraph: {
+    title: "About TVA | Triumph Volleyball Academy",
+    description:
+      "Founded in 2011, TVA develops Central Valley youth athletes physically, mentally, and spiritually through faith-based competitive volleyball in California.",
+    url: "/about",
+    images: ["/photos/tva-fca-camp-group-2023.webp"],
+  },
+  twitter: {
+    title: "About TVA | Triumph Volleyball Academy",
+    description:
+      "Founded in 2011, TVA develops Central Valley youth athletes physically, mentally, and spiritually through faith-based competitive volleyball in California.",
+    images: ["/photos/tva-fca-camp-group-2023.webp"],
+  },
 };
 
 export default function AboutPage() {

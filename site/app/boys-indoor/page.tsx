@@ -7,6 +7,19 @@ export const metadata: Metadata = {
   title: "Boys Indoor Volleyball | Triumph Volleyball Academy",
   description:
     "TVA Boys Indoor competes in the NCVA Power League and Fresno Heat League. Faith-based competitive club volleyball for boys in the Central Valley of California.",
+  openGraph: {
+    title: "Boys Indoor Volleyball | Triumph Volleyball Academy",
+    description:
+      "TVA Boys Indoor competes in the NCVA Power League and Fresno Heat League. Faith-based competitive club volleyball for boys in the Central Valley of California.",
+    url: "/boys-indoor",
+    images: ["/photos/boys-new-1.jpg"],
+  },
+  twitter: {
+    title: "Boys Indoor Volleyball | Triumph Volleyball Academy",
+    description:
+      "TVA Boys Indoor competes in the NCVA Power League and Fresno Heat League. Faith-based competitive club volleyball for boys in the Central Valley of California.",
+    images: ["/photos/boys-new-1.jpg"],
+  },
 };
 
 export default function BoysIndoorPage() {

@@ -4,9 +4,27 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://triumphvolleyballacademy.com"),
   title: "Triumph Volleyball Academy",
   description:
     "A Christian-based volleyball club in the Central Valley of California offering competitive boys indoor, girls indoor, and sand volleyball programs.",
+  openGraph: {
+    type: "website",
+    siteName: "Triumph Volleyball Academy",
+    title: "Triumph Volleyball Academy",
+    description:
+      "A Christian-based volleyball club in the Central Valley of California offering competitive boys indoor, girls indoor, and sand volleyball programs.",
+    url: "https://triumphvolleyballacademy.com",
+    images: ["/photos/tva-sand-action-hero.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@triumphvballacademy",
+    title: "Triumph Volleyball Academy",
+    description:
+      "A Christian-based volleyball club in the Central Valley of California offering competitive boys indoor, girls indoor, and sand volleyball programs.",
+    images: ["/photos/tva-sand-action-hero.jpg"],
+  },
 };
 
 const organizationSchema = {

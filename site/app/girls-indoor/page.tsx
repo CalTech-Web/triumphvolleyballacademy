@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   title: "Girls Indoor Volleyball | Triumph Volleyball Academy",
   description:
     "Competitive indoor volleyball for girls in the Central Valley. TVA Girls features 30+ collegiate alumni and faith-integrated coaching from experienced staff.",
+  openGraph: {
+    title: "Girls Indoor Volleyball | Triumph Volleyball Academy",
+    description:
+      "Competitive indoor volleyball for girls in the Central Valley. TVA Girls features 30+ collegiate alumni and faith-integrated coaching from experienced staff.",
+    url: "/girls-indoor",
+    images: ["/photos/girls-hero.jpg"],
+  },
+  twitter: {
+    title: "Girls Indoor Volleyball | Triumph Volleyball Academy",
+    description:
+      "Competitive indoor volleyball for girls in the Central Valley. TVA Girls features 30+ collegiate alumni and faith-integrated coaching from experienced staff.",
+    images: ["/photos/girls-hero.jpg"],
+  },
 };
 
 export default function GirlsIndoorPage() {

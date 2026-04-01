@@ -6,6 +6,19 @@ export const metadata = {
   title: "Camps & Programs | Triumph Volleyball Academy",
   description:
     "TVA offers Boys Indoor, Girls Indoor, Beach, and FCA Partnership Camp programs for youth athletes in the Central Valley.",
+  openGraph: {
+    title: "Camps & Programs | Triumph Volleyball Academy",
+    description:
+      "TVA offers Boys Indoor, Girls Indoor, Beach, and FCA Partnership Camp programs for youth athletes in the Central Valley.",
+    url: "/camps",
+    images: ["/photos/tva-sand-action-hero.jpg"],
+  },
+  twitter: {
+    title: "Camps & Programs | Triumph Volleyball Academy",
+    description:
+      "TVA offers Boys Indoor, Girls Indoor, Beach, and FCA Partnership Camp programs for youth athletes in the Central Valley.",
+    images: ["/photos/tva-sand-action-hero.jpg"],
+  },
 };
 
 const programs = [

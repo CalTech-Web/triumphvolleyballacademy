@@ -7,6 +7,19 @@ export const metadata: Metadata = {
   title: "Beach Academy | Triumph Volleyball Academy",
   description:
     "TVA Beach Academy runs each summer for boys and girls in the Central Valley. Expert sand volleyball coaching with faith integrated into every session.",
+  openGraph: {
+    title: "Beach Academy | Triumph Volleyball Academy",
+    description:
+      "TVA Beach Academy runs each summer for boys and girls in the Central Valley. Expert sand volleyball coaching with faith integrated into every session.",
+    url: "/sand",
+    images: ["/photos/tva-sand-action-hero.jpg"],
+  },
+  twitter: {
+    title: "Beach Academy | Triumph Volleyball Academy",
+    description:
+      "TVA Beach Academy runs each summer for boys and girls in the Central Valley. Expert sand volleyball coaching with faith integrated into every session.",
+    images: ["/photos/tva-sand-action-hero.jpg"],
+  },
 };
 
 export default function SandPage() {
