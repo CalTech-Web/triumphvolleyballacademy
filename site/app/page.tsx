@@ -57,21 +57,21 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="#teams"
+            <a
+              href="mailto:coachgugtva@gmail.com?subject=TVA Program Inquiry"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl"
               style={{ backgroundColor: "#3DBFB0", color: "#1E2D5C" }}
             >
-              Explore Teams
+              Contact a Coach
               <ArrowRight size={20} />
-            </Link>
-            <a
-              href="mailto:coachgugtva@gmail.com?subject=TVA Program Inquiry"
+            </a>
+            <Link
+              href="#teams"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 border-2 hover:bg-white/10"
               style={{ color: "#ffffff", borderColor: "rgba(255,255,255,0.4)" }}
             >
-              Contact a Coach
-            </a>
+              Explore Teams
+            </Link>
           </div>
         </div>
 
