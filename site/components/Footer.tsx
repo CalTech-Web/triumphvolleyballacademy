@@ -105,6 +105,15 @@ export default function Footer() {
                   About
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/coaches"
+                  className="text-sm transition-colors hover:text-white"
+                  style={{ color: "rgba(255,255,255,0.7)" }}
+                >
+                  Coach Application
+                </Link>
+              </li>
             </ul>
           </div>
 
