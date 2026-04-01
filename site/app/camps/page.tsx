@@ -64,9 +64,22 @@ const programs = [
   },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://triumphvolleyballacademy.com" },
+    { "@type": "ListItem", position: 2, name: "Camps & Programs", item: "https://triumphvolleyballacademy.com/camps" },
+  ],
+};
+
 export default function CampsPage() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="relative py-24 overflow-hidden" style={{ backgroundColor: "#1E2D5C" }}>
         <Image

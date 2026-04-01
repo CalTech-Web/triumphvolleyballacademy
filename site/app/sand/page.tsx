@@ -22,9 +22,22 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://triumphvolleyballacademy.com" },
+    { "@type": "ListItem", position: 2, name: "Beach Academy", item: "https://triumphvolleyballacademy.com/sand" },
+  ],
+};
+
 export default function SandPage() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="relative py-24 overflow-hidden" style={{ backgroundColor: "#1E2D5C" }}>
         <Image

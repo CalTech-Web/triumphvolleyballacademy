@@ -22,6 +22,15 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://triumphvolleyballacademy.com" },
+    { "@type": "ListItem", position: 2, name: "Boys Indoor Volleyball", item: "https://triumphvolleyballacademy.com/boys-indoor" },
+  ],
+};
+
 export default function BoysIndoorPage() {
   const importantLinks = [
     {
@@ -52,6 +61,10 @@ export default function BoysIndoorPage() {
 
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="relative py-24 overflow-hidden" style={{ backgroundColor: "#1E2D5C" }}>
         {/* Background team photo */}

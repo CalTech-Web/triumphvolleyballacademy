@@ -22,9 +22,22 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://triumphvolleyballacademy.com" },
+    { "@type": "ListItem", position: 2, name: "About TVA", item: "https://triumphvolleyballacademy.com/about" },
+  ],
+};
+
 export default function AboutPage() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Page Hero */}
       <section className="py-20 relative overflow-hidden" style={{ backgroundColor: "#1E2D5C" }}>
         {/* Background team photo */}

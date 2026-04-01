@@ -19,6 +19,23 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://triumphvolleyballacademy.com" },
+    { "@type": "ListItem", position: 2, name: "Coach Application", item: "https://triumphvolleyballacademy.com/coaches" },
+  ],
+};
+
 export default function CoachesLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      {children}
+    </>
+  );
 }
