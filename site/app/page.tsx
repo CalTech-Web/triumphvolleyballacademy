@@ -65,13 +65,13 @@ export default function Home() {
               Explore Teams
               <ArrowRight size={20} />
             </Link>
-            <Link
-              href="/about"
+            <a
+              href="mailto:coachgugtva@gmail.com?subject=TVA Program Inquiry"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 border-2 hover:bg-white/10"
               style={{ color: "#ffffff", borderColor: "rgba(255,255,255,0.4)" }}
             >
-              Our Mission
-            </Link>
+              Contact a Coach
+            </a>
           </div>
         </div>
 
