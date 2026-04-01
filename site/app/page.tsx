@@ -248,6 +248,19 @@ export default function Home() {
                   - 1 Corinthians 10:31
                 </p>
               </div>
+              <div className="mt-8">
+                <p className="text-sm mb-4" style={{ color: "#6b7280" }}>
+                  If this mission resonates, we&apos;d love to talk about your athlete.
+                </p>
+                <a
+                  href="mailto:coachgugtva@gmail.com?subject=TVA Program Inquiry"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-bold text-base transition-all duration-200 hover:scale-105 hover:shadow-lg"
+                  style={{ backgroundColor: "#3DBFB0", color: "#1E2D5C" }}
+                >
+                  Contact a Coach
+                  <ArrowRight size={18} />
+                </a>
+              </div>
             </div>
             <div className="relative">
               <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full opacity-30" style={{ backgroundColor: "#F4A07A" }} />
