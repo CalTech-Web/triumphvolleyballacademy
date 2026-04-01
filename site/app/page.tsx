@@ -40,7 +40,7 @@ export default function Home() {
         />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold" style={{ backgroundColor: "rgba(61,191,176,0.2)", color: "#3DBFB0" }}>
+          <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold" style={{ backgroundColor: "rgba(61,191,176,0.2)", color: "#ffffff" }}>
             <Star size={14} fill="currentColor" />
             Christian-Based Youth Volleyball
           </div>
@@ -283,7 +283,7 @@ export default function Home() {
       <section className="py-20" style={{ backgroundColor: "#1E2D5C" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full text-sm font-semibold" style={{ backgroundColor: "rgba(61,191,176,0.15)", color: "#3DBFB0" }}>
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full text-sm font-semibold" style={{ backgroundColor: "rgba(61,191,176,0.15)", color: "#ffffff" }}>
               <Instagram size={16} />
               @triumphvballacademy
             </div>
@@ -409,14 +409,14 @@ export default function Home() {
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 hover:scale-105"
               style={{ backgroundColor: "#3DBFB0", color: "#1E2D5C" }}
             >
-              Boys Indoor <ArrowRight size={18} />
+              Contact Boys Coach <ArrowRight size={18} />
             </a>
             <a
               href="mailto:coachwoldtva@gmail.com?subject=Girls Indoor - Program Inquiry"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 border-2 hover:bg-white/10"
               style={{ color: "#ffffff", borderColor: "rgba(255,255,255,0.4)" }}
             >
-              Girls Indoor <ArrowRight size={18} />
+              Contact Girls Coach <ArrowRight size={18} />
             </a>
           </div>
         </div>
