@@ -5,9 +5,12 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://triumphvolleyballacademy.com"),
-  title: "Triumph Volleyball Academy",
+  title: "Triumph Volleyball Academy | Central Valley CA Volleyball Club",
   description:
     "A Christian-based volleyball club in the Central Valley of California offering competitive boys indoor, girls indoor, and sand volleyball programs.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     siteName: "Triumph Volleyball Academy",
